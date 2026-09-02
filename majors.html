@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สาขาวิชาที่เปิดสอน - วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่</title>
+    
+    <!-- ================= ส่วนตกแต่ง CSS (ธีมเดียวกับทุกหน้า) ================= -->
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #004d99;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav li a:hover, nav li a.active {
+            background-color: #ffcc00;
+            color: #003366;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* ตกแต่งตาราง/การ์ดสาขาวิชา */
+        .majors-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .major-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-top: 4px solid #003366;
+            transition: transform 0.2s;
+        }
+
+        .major-card:hover {
+            transform: translateY(-5px);
+            border-top-color: #ffcc00;
+        }
+
+        .major-card h3 {
+            margin-top: 0;
+            color: #003366;
+            font-size: 1.15em;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        .major-card p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .major-card .eng-title {
+            color: #888;
+            font-size: 0.85em;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        hr {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= 1. ส่วนหัว (Header) ================= -->
+    <header>
+        <img alt="โลโก้โปลิเทคนิค" src="https://github.com/user-attachments/assets/2228be1e-a415-407b-ae70-3ecb40a943b3" />
+        
+        <h1>วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่</h1>
+        
+        <!-- แถบเมนูเชื่อมโยง -->
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="executives.html">ข้อมูลผู้บริหาร</a></li>
+                <li><a href="personnel.html">ข้อมูลบุคลากร</a></li>
+                <li><a href="students.html">ข้อมูลนักเรียน นักศึกษา</a></li>
+                <li><a href="majors.html" class="active">ข้อมูลสาขาวิชาที่เปิดสอน</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- ================= 2. ส่วนเนื้อหาสาขาวิชา (Content) ================= -->
+    <main>
+        <section style="text-align: center;">
+            <h2>สาขาวิชาที่เปิดสอน ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h2>
+            
+            <div class="majors-grid">
+                
+                <div class="major-card">
+                    <h3>สาขางานยานยนต์</h3>
+                    <p class="eng-title">Auto Mechanical Technology</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขายานยนต์ไฟฟ้า</h3>
+                    <p class="eng-title">Electric Vehicle</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาช่างไฟฟ้ากำลัง</h3>
+                    <p class="eng-title">Electrical Power Technology</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาช่างก่อสร้าง</h3>
+                    <p class="eng-title">Construction Technology</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาสถาปัตยกรรม</h3>
+                    <p class="eng-title">Architectural Technology</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาเทคโนโลยีสารสนเทศ</h3>
+                    <p class="eng-title">Information Technology</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาการบัญชี</h3>
+                    <p class="eng-title">Accounting</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาการตลาด</h3>
+                    <p class="eng-title">Marketing</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาธุรกิจดิจิทัล</h3>
+                    <p class="eng-title">Digital Business Technology</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาการท่องเที่ยว</h3>
+                    <p class="eng-title">Tourism</p>
+                </div>
+
+                <div class="major-card">
+                    <h3>สาขาการโรงแรม</h3>
+                    <p class="eng-title">Hotel Management</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- ================= 3. ส่วนท้าย (Footer) ================= -->
+    <footer>
+        <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่. สงวนลิขสิทธิ์.</p>
+        <p>ที่อยู่: 2 ถนนสุขเกษม ต.ป่าตัน อ.เมือง จ.เชียงใหม่ 50300</p>
+    </footer>
+
+</body>
+</html>

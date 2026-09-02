@@ -4,17 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หน้าหลัก - วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่</title>
+    
+    <style>
+        /* สไตล์พื้นฐาน: กำหนดฟอนต์และระยะขอบ */
+        body {
+            font-family: 'Sarabun', sans-serif; /* เปลี่ยนเป็นฟอนต์ไทยที่ดูง่าย */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* สีพื้นหลังเว็บอ่อนๆ */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ส่วนหัว (Header): สีพื้นหลังน้ำเงินเข้ม, จัดกึ่งกลาง */
+        header {
+            background-color: #003366; /* สีน้ำเงินเข้ม */
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* ตกแต่งโลโก้: มีขอบมนและเงา */
+        header img {
+            max-width: 150px; /* ปรับขนาดโลโก้ไม่ให้ใหญ่เกินไป */
+            height: auto;
+            background-color: #fff; /* ขอบโลโก้สีขาว */
+            padding: 10px;
+            border-radius: 50%; /* โลโก้กลม */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin-top: 20px;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        /* แถบเมนู: สีพื้นหลังน้ำเงินอ่อน, เมนูเรียงแนวนอน */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #004d99; /* สีน้ำเงินอ่อนลง */
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* จัดเมนูกึ่งกลาง */
+        }
+
+        nav li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s; /* ใส่เอฟเฟกต์เวลาเมาส์ชี้ */
+        }
+
+        nav li a:hover {
+            background-color: #ffcc00; /* เมาส์ชี้เปลี่ยนเป็นสีทอง */
+            color: #003366; /* ตัวหนังสือเปลี่ยนเป็นน้ำเงินเข้ม */
+        }
+
+        /* จัดหน้าเนื้อหาหลัก (Main) */
+        main {
+            max-width: 1000px; /* กำหนดความกว้างสุดของเนื้อหา */
+            margin: 20px auto; /* จัดกึ่งกลางหน้าจอ */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* ตกแต่งรูปแบนเนอร์: ให้มีขอบมนและเงา */
+        .school-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 3px solid #ffcc00; /* เส้นใต้ขอบสีทอง */
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* ส่วนท้าย (Footer): สีพื้นหลังน้ำเงินเข้ม */
+        footer {
+            background-color: #003366;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* ซ่อนเส้น <hr> เดิมออกเพราะเรามี CSS จัดแบ่งแล้ว */
+        hr {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- ================= 1. ส่วนหัว (Header) ================= -->
     <header>
-        <!-- โลโก้ของโปลิเทคนิค (เก็บไว้ที่ images/logo.png) -->
-        <img width="444" height="450" alt="images-removebg-preview" src="https://github.com/user-attachments/assets/2228be1e-a415-407b-ae70-3ecb40a943b3" />
+        <img alt="โลโก้โปลิเทคนิค" src="https://github.com/user-attachments/assets/2228be1e-a415-407b-ae70-3ecb40a943b3" />
         
         <h1>วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่</h1>
         
-        <!-- แถบเมนูเชื่อมโยง -->
         <nav>
             <ul>
                 <li><a href="index.html">หน้าหลัก</a></li>
@@ -28,11 +134,9 @@
 
     <hr>
 
-    <!-- ================= 2. ส่วนเนื้อหา (Content) ================= -->
     <main>
-        <!-- รูปบรรยากาศ/ตึกอาคารของโปลิ (เก็บไว้ที่ images/banner.jpg) -->
         <section>
-            <img src="images/banner.jpg" alt="บรรยากาศวิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา" width="100%" style="max-width: 1000px; height: auto;">
+            <img src="images/banner.jpg" alt="บรรยากาศวิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา" class="school-banner">
         </section>
 
         <section>
@@ -43,7 +147,6 @@
 
     <hr>
 
-    <!-- ================= 3. ส่วนท้าย (Footer) ================= -->
     <footer>
         <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่. สงวนลิขสิทธิ์.</p>
         <p>ที่อยู่: 2 ถนนสุขเกษม ต.ป่าตัน อ.เมือง จ.เชียงใหม่ 50300</p>

@@ -6,31 +6,30 @@
     <title>หน้าหลัก - วิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา เชียงใหม่</title>
     
     <style>
-        /* สไตล์พื้นฐาน: กำหนดฟอนต์และระยะขอบ */
+        /* สไตล์พื้นฐาน */
         body {
-            font-family: 'Sarabun', sans-serif; /* เปลี่ยนเป็นฟอนต์ไทยที่ดูง่าย */
+            font-family: 'Sarabun', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9; /* สีพื้นหลังเว็บอ่อนๆ */
+            background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
         }
 
-        /* ส่วนหัว (Header): สีพื้นหลังน้ำเงินเข้ม, จัดกึ่งกลาง */
+        /* ส่วนหัว Header */
         header {
-            background-color: #003366; /* สีน้ำเงินเข้ม */
+            background-color: #003366;
             color: #fff;
             text-align: center;
             padding: 40px 20px;
         }
 
-        /* ตกแต่งโลโก้: มีขอบมนและเงา */
         header img {
-            max-width: 150px; /* ปรับขนาดโลโก้ไม่ให้ใหญ่เกินไป */
+            max-width: 150px;
             height: auto;
-            background-color: #fff; /* ขอบโลโก้สีขาว */
+            background-color: #fff;
             padding: 10px;
-            border-radius: 50%; /* โลโก้กลม */
+            border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
@@ -40,15 +39,15 @@
             text-transform: uppercase;
         }
 
-        /* แถบเมนู: สีพื้นหลังน้ำเงินอ่อน, เมนูเรียงแนวนอน */
+        /* แถบเมนู */
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: #004d99; /* สีน้ำเงินอ่อนลง */
+            background-color: #004d99;
             overflow: hidden;
             display: flex;
-            justify-content: center; /* จัดเมนูกึ่งกลาง */
+            justify-content: center;
         }
 
         nav li a {
@@ -58,18 +57,18 @@
             padding: 15px 25px;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s; /* ใส่เอฟเฟกต์เวลาเมาส์ชี้ */
+            transition: background-color 0.3s;
         }
 
         nav li a:hover {
-            background-color: #ffcc00; /* เมาส์ชี้เปลี่ยนเป็นสีทอง */
-            color: #003366; /* ตัวหนังสือเปลี่ยนเป็นน้ำเงินเข้ม */
+            background-color: #ffcc00;
+            color: #003366;
         }
 
-        /* จัดหน้าเนื้อหาหลัก (Main) */
+        /* จัดหน้าเนื้อหาหลัก */
         main {
-            max-width: 1000px; /* กำหนดความกว้างสุดของเนื้อหา */
-            margin: 20px auto; /* จัดกึ่งกลางหน้าจอ */
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -80,22 +79,32 @@
             margin-bottom: 30px;
         }
 
-        /* ตกแต่งรูปแบนเนอร์: ให้มีขอบมนและเงา */
+        /* ================= ปรับแต่งรูปภาพบรรยากาศให้พอดีเรียบร้อย ================= */
+        .banner-container {
+            text-align: center; /* จัดรูปกึ่งกลาง */
+            overflow: hidden;
+        }
+
         .school-banner {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;           /* ปรับความกว้างตามหน้าจอพอดี */
+            max-width: 900px;      /* กำหนดความกว้างสูงสุดไม่ให้ใหญ่เกินไป */
+            height: auto;          /* สัดส่วนไม่เบี้ยว */
+            max-height: 450px;     /* จำกัดความสูงไม่ให้กินพื้นที่เยอะเกินไป */
+            object-fit: cover;     /* ครอบตัดรูปให้ออกมาสมดุล */
+            border-radius: 12px;   /* ขอบมนเรียบร้อย */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* เงาสวยงาม */
+            display: block;
+            margin: 0 auto;
         }
 
         h2 {
             color: #003366;
-            border-bottom: 3px solid #ffcc00; /* เส้นใต้ขอบสีทอง */
+            border-bottom: 3px solid #ffcc00;
             padding-bottom: 10px;
             display: inline-block;
         }
 
-        /* ส่วนท้าย (Footer): สีพื้นหลังน้ำเงินเข้ม */
+        /* ส่วนท้าย Footer */
         footer {
             background-color: #003366;
             color: #ccc;
@@ -108,7 +117,6 @@
             margin: 5px 0;
         }
 
-        /* ซ่อนเส้น <hr> เดิมออกเพราะเรามี CSS จัดแบ่งแล้ว */
         hr {
             display: none;
         }
@@ -135,8 +143,9 @@
     <hr>
 
     <main>
-        <section>
-            <img width="1280" height="720" alt="654c65f35a0a11699505651" src="https://github.com/user-attachments/assets/941cc4c6-281b-42c5-a8e0-1bd22a6c667d" />
+        <!-- ใส่ Class ให้กับส่วนรูปภาพบรรยากาศ -->
+        <section class="banner-container">
+            <img class="school-banner" alt="บรรยากาศวิทยาลัยเทคโนโลยีโปลิเทคนิคล้านนา" src="https://github.com/user-attachments/assets/941cc4c6-281b-42c5-a8e0-1bd22a6c667d" />
         </section>
 
         <section>
